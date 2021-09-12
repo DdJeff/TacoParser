@@ -65,6 +65,7 @@ namespace LoggingKata
                     corB.Latitude = locB.Location.Latitude;
                     corB.Longitude = locB.Location.Longitude;
 
+                    Console.WriteLine(locB.Name);
                     // Now, compare the two using `.GetDistanceTo()`, which returns a double 
                     if (corA.GetDistanceTo(corB) > distance)
                     {
@@ -80,6 +81,7 @@ namespace LoggingKata
             // the two Taco Bells farthest away from each other.
 
             logger.LogInfo($"The two furthest taco Bells are {locale1.Name} and {locale2.Name}");
+            Console.WriteLine("Thanks for using our service.");
            
         }
     }
